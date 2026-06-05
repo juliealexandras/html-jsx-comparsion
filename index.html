@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Document basics -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
+
+    <!-- Fonts: preconnect speeds up Google Fonts loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Inter — weights 400–700 used across the page -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Shared styles for both HTML and JSX versions -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Demo badge — identifies this as the static HTML version (not interactive) -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Pricing cards row — plans sit side by side inside cards-container -->
     <div class="cards-container">
+
+        <!-- Hobby plan card -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
@@ -36,8 +47,11 @@
                     </ul>
                 </div>
             </div>
+            <!-- Secondary (outlined-style) CTA -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Pro plan card -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
@@ -67,8 +81,43 @@
                     </ul>
                 </div>
             </div>
+            <!-- Primary (filled dark) CTA -->
             <button class="download-button primary">Get Pro</button>
         </div>
+        
+        <!-- Enterprise plan card — same structure as Hobby/Pro; copy this block to add more cards -->
+        <div class="card">
+            <div class="card-top">
+                <h3 class="card-title">Enterprise</h3>
+                <p class="card-price">
+                    <span class="card-price-amount">Custom</span>
+                </p>
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            SSO & SAML
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Admin controls & usage analytics
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Priority support
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Custom contracts & invoicing
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Secondary CTA — matches Hobby button style -->
+            <button class="download-button secondary">Contact sales</button>
+        </div>
+
     </div>
 </body>
 </html>
